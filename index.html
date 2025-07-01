@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/LiteWeb-Studio/assets/index-JfATj7eB.js"></script>
+    <script type="module" crossorigin src="/LiteWeb-Studio/assets/index-CiOFhWmr.js"></script>
     <link rel="stylesheet" crossorigin href="/LiteWeb-Studio/assets/index-Cg7fW1J8.css">
   </head>
   <body>
@@ -450,7 +450,8 @@ Se il tuo intento è mostrare le tue informazioni
   <div class="h-20 flex flex-col justify-center">
     <a
       href="#mssion"
-      class="text-center font-semibold self-center flex flex-col justify-center text-white hover:text-stone-200"
+      class="text-center font-semibold self-center flex flex-col justify-center text-white hover:text-stone-200" 
+      onclick="closeMenuOnLinks()"
       >Mssion</a
     >
   </div>
@@ -458,6 +459,7 @@ Se il tuo intento è mostrare le tue informazioni
     <a
       href="#benefici"
       class="text-center font-semibold self-center flex flex-col justify-center text-white hover:text-stone-200"
+      onclick="closeMenuOnLinks()"
       >Benefici</a
     >
   </div>
@@ -465,6 +467,7 @@ Se il tuo intento è mostrare le tue informazioni
     <a
       href="#a-chi"
       class="text-center font-semibold self-center flex flex-col justify-center text-white hover:text-stone-200"
+      onclick="closeMenuOnLinks()"
       >A chi è adatto</a
     >
   </div>
@@ -472,18 +475,32 @@ Se il tuo intento è mostrare le tue informazioni
     <a
       href="#come-funziona"
       class="text-center font-semibold self-center flex flex-col justify-center text-white hover:text-stone-200"
+      onclick="closeMenuOnLinks()"
       >Come funziona</a
     >
   </div>
   <div class="h-20 flex flex-col justify-center">
     <a
-      href="#pricing"
+    href="#pricing"
+      onclick="closeMenuOnLinks()"
       class="text-center font-semibold self-center flex flex-col justify-center text-white hover:text-stone-200"
       >Pricing</a
     >
   </div>
 </div>
     
+
+<script>
+
+  const menu = document.querySelector("#mobile_menu");
+
+  function closeMenuOnLinks(){
+      if(menu){
+    menu.classList = ('w-full h-72 z-5 fixed top-20 bg-blue-700 hidden py-2');
+  }
+  }
+</script>
+
   </body>
 </html>
 
